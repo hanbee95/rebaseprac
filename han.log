@@ -1,4 +1,22 @@
 Rebase:
-  / e - f - g
-a - b - c - d
+           / b2 - b3 - b4 -> rebase
+a1 - a2 - b1 - a3 - a4
 after rebase, what would be happen?
+
+mimicing:
+p1 for the project
+a1 pushed: aaca2c2
+a2 pushed: 9e67dab
+b1 pushed: cbc7924
+----------------------------------
+p1 still working on a file
+a3 pushed: 698adab
+a4 pushed: 47de32c
+p2 for the project found some interest in b file
+b developed in another branch
+b2 pushed: ac4f35d
+b3 pushed: 3a30755
+b4 pushed: 4fe238f
+
+REBASE:
+git rebase <base-in this case, main>
