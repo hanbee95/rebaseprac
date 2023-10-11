@@ -18,5 +18,33 @@ b2 pushed: ac4f35d
 b3 pushed: 3a30755
 b4 pushed: 4fe238f
 
+log pushed: b37981d
+
 REBASE:
+After checkout bDev branch
 git rebase <base-in this case, main>
+>Successfully rebased and updated refs/heads/bDev.
+>> In the git log, the bDev branch start point in end of main branch. 
+
+If I do git pull?
+>Merge made by the 'ort' strategy. <- just fater way
+>In the git log, there is HEAD->bDev happened
+
+if I push?
+git push --force origin bDev
+
+a1 pushed: aaca2c2
+a2 pushed: 9e67dab
+b1 pushed: cbc7924
+----------------------------------
+b2 pushed: ac4f35d
+a3 pushed: 698adab
+a4 pushed: 47de32c
+b3 pushed: 3a30755
+b4 pushed: 4fe238f
+log pushed: b37981d
+---------------------------------- < after this all is done by rebase / pull / push
+b2 pushed: 8e88709
+b3 pushed: 31ebd1d
+b4 pushed: 777bbda
+Merge : d54418f
