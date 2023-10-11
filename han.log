@@ -1,1 +1,4 @@
 Rebase:
+  / e - f - g
+a - b - c - d
+after rebase, what would be happen?
